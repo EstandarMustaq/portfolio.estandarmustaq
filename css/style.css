@@ -59,7 +59,7 @@ body{
   gap:18px;
 }
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
-.logo img{height:36px;border-radius:8px}
+.logo img{height:32px;border-radius:8px}
 .brand{font-family:var(--font-title);font-weight:700}
 .main-nav{display:flex;gap:14px}
 .main-nav a{
@@ -270,7 +270,7 @@ h2{
 }
 .icon-btn{
   display:inline-flex;align-items:center;justify-content:center;padding:10px;border-radius:10px;
-  border:1px solid rgba(255,255,255,0.04);background:transparent;cursor:pointer;
+  border:1px solid rgba(255,255,255,0.04);background:transparent;cursor:pointer;color: var(--text);
 }
 .icon-btn .feather{width:18px;height:18px}
 .contact-toast{

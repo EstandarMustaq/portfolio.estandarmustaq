@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const LOTTIE_PATH = 'img/coding-slide.json'; // ajuste se necessário
+  const LOTTIE_PATH = 'img/coding-slide.json';
 
   // -----------------------
   // Helpers
@@ -113,7 +113,6 @@
         }
       };
 
-      // Carrega quando a secção estiver perto do viewport (lazy)
       const io = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -292,7 +291,6 @@
       }
     })();
 
-    // final: replace feather once more in case DOM changed dynamically
     if (window.feather) feather.replace();
   }); // DOMContentLoaded end
 

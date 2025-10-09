@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Estandar Mustaq — Desenvolvedor Web, UI/UX Designer</title>
 
-  <!-- SEO / Meta -->
   <meta name="description"
     content="Portfólio de Estandar Mustaq — Desenvolvedor Web, UI/UX Designer. Projetos, serviços e contacto." />
   <meta name="keywords" content="Estandar Mustaq, desenvolvedor web, UI UX, Next.js, Node, Flask, portfólio, design" />
@@ -15,7 +14,6 @@
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0b0f14" />
 
-  <!-- Open Graph (social sharing) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Estandar Mustaq — Desenvolvedor Web, UI/UX" />
   <meta property="og:description"
@@ -23,36 +21,33 @@
   <meta property="og:image" content="https://seudominio.com/img/og-image.png" />
   <meta property="og:url" content="https://seudominio.com/" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Estandar Mustaq — Portfólio" />
   <meta name="twitter:description" content="Portfólio de Estandar Mustaq — Desenvolvedor Web, UI/UX Designer" />
   <meta name="twitter:image" content="https://seudominio.com/img/og-image.png" />
-
-  <!-- Preconnect / Fonts / Icons -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Ubuntu:wght@300;400;600&display=swap"
     rel="stylesheet">
   <script src="https://unpkg.com/feather-icons" defer></script>
 
-  <!-- Lottie (bodymovin) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js" defer></script>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- Skip link para acessibilidade -->
   <a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;">Ir para o conteúdo</a>
 
-  <!-- Header / Nav -->
   <header class="navbar" role="banner">
     <div class="nav-inner wrap">
       <a href="/" class="logo" aria-label="Estandar Mustaq — Página Inicial">
-        <img src="img/large-icons.png" alt="Logotipo Estandar Mustaq" />
+        <img src="img/logo-icons0.png" alt="Logotipo Estandar Mustaq" />        
       </a>
 
       <nav class="main-nav" role="navigation" aria-label="Menu principal">
@@ -72,7 +67,6 @@
   </header>
 
   <main id="main-content" class="wrap" role="main">
-    <!-- HERO -->
     <section id="home" class="hero" aria-labelledby="hero-title">
       <div class="hero-left">
         <span class="kicker">Desenvolvedor • UI/UX • Integrations</span>
@@ -104,7 +98,6 @@
           </div>
         </div>
 
-        <!-- Lottie: animação do hero (lazy-loaded pelo main.js) -->
         <div id="lottie-hero" class="lottie-container" aria-hidden="true"></div>
 
         <div class="services-row" aria-hidden="true">
@@ -135,7 +128,6 @@
       </aside>
     </section>
 
-    <!-- PORTFÓLIO -->
     <section id="portfolio" class="section" aria-labelledby="portfolio-title">
       <h2 id="portfolio-title">Destaques do Portfólio</h2>
       <div class="grid" role="list">
@@ -169,7 +161,6 @@
       </div>
     </section>
 
-    <!-- SERVIÇOS -->
     <section id="servicos" class="section" aria-labelledby="servicos-title">
       <h2 id="servicos-title">Serviços</h2>
 
@@ -208,7 +199,6 @@
       </div>
     </section>
 
-    <!-- CONTACTO -->
     <section id="contacto" class="section" aria-labelledby="contact-title">
       <h2 id="contact-title">Contacto</h2>
 
@@ -224,7 +214,7 @@
               </a>
 
               <a class="glass-cta"
-                href="mailto:estandarmustaque@hotmail.com?subject=Contacto%20via%20Port%C3%B3fio&body=Olá%20Estandar,%0A%0AGostaria%20de%20falar%20sobre..."
+                href="mailto:mustaqueestandarjunior@gmail.com?subject=Contacto%20via%20Port%C3%B3fio&body=Olá%20Estandar,%0A%0AGostaria%20de%20falar%20sobre..."
                 id="mailto-link" aria-label="Enviar email">
                 <i data-feather="mail"></i><span>Email</span>
               </a>
@@ -283,7 +273,6 @@
     </footer>
   </main>
 
-  <!-- Modal demos (iframe) -->
   <div id="modal" class="modal" aria-hidden="true">
     <div class="modal-card" role="dialog" aria-modal="true">
       <div class="modal-head">
@@ -294,7 +283,6 @@
     </div>
   </div>
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -312,9 +300,7 @@
   </script>
 
   <script src="js/main.js" defer></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => { if (window.feather) feather.replace(); });
-  </script>
+
 </body>
 
 </html>
