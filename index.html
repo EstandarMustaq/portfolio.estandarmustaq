@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Estandar Mustaq — Desenvolvedor Web, UI/UX Designer</title>
+
+  <!-- SEO / Meta -->
+  <meta name="description"
+    content="Portfólio de Estandar Mustaq — Desenvolvedor Web, UI/UX Designer. Projetos, serviços e contacto." />
+  <meta name="keywords" content="Estandar Mustaq, desenvolvedor web, UI UX, Next.js, Node, Flask, portfólio, design" />
+  <meta name="author" content="Estandar Mustaq" />
+  <link rel="canonical" href="https://seudominio.com/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Estandar Mustaq — Desenvolvedor Web, UI/UX" />
+  <meta property="og:description"
+    content="Portfólio de Estandar Mustaq — Desenvolvedor Web, UI/UX Designer. Veja projetos, serviços e contacte-me." />
+  <meta property="og:image" content="https://seudominio.com/img/og-image.png" />
+  <meta property="og:url" content="https://seudominio.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Estandar Mustaq — Portfólio" />
+  <meta name="twitter:description" content="Portfólio de Estandar Mustaq — Desenvolvedor Web, UI/UX Designer" />
+  <meta name="twitter:image" content="https://seudominio.com/img/og-image.png" />
+
+  <!-- Preconnect / Fonts / Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Ubuntu:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons" defer></script>
+
+  <!-- Lottie (bodymovin) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js" defer></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Skip link para acessibilidade -->
+  <a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;">Ir para o conteúdo</a>
+
+  <!-- Header / Nav -->
+  <header class="navbar" role="banner">
+    <div class="nav-inner wrap">
+      <a href="/" class="logo" aria-label="Estandar Mustaq — Página Inicial">
+        <img src="img/large-icons.png" alt="Logotipo Estandar Mustaq" />
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="controls" style="margin-left:auto">
+        <a href="seu-cv.pdf" class="btn-icon" title="Download CV" aria-label="Download CV"><i
+            data-feather="download"></i></a>
+        <a href="https://github.com/EstandarMustaq" class="btn-icon" target="_blank" rel="noopener" title="GitHub"
+          aria-label="GitHub"><i data-feather="github"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="wrap" role="main">
+    <!-- HERO -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <span class="kicker">Desenvolvedor • UI/UX • Integrations</span>
+        <h1 id="hero-title">Construo produtos digitais acessíveis, performáticos e com design moderno.</h1>
+        <p>Sou Estandar Mustaq — transformo requisitos complexos em interfaces claras e aplicações web robustas.</p>
+
+        <div class="cta-row" role="group" aria-label="Ações principais">
+          <button class="btn-primary" id="cta-work" aria-controls="portfolio">Ver trabalhos</button>
+          <button class="btn-outline" id="cta-contact" aria-controls="contacto">Contrate-me</button>
+        </div>
+
+        <div class="badges" aria-hidden="true">
+          <span class="chip">Freelance</span>
+          <span class="chip">Aberto a propostas</span>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-labelledby="profile-name">
+        <div class="profile-card">
+          <div class="avatar" aria-hidden="true">
+            <img src="https://github.com/EstandarMustaq.png" alt="Foto de Estandar Mustaq" />
+          </div>
+
+          <div class="profile-meta">
+            <h3 id="profile-name">Estandar Mustaq</h3>
+            <p class="muted">Desenvolvedor Web • UI/UX Designer <br>
+              <small>Node · React · Next.js · Express.js · Flask · MongoDB · SQLite</small>
+            </p>
+          </div>
+        </div>
+
+        <!-- Lottie: animação do hero (lazy-loaded pelo main.js) -->
+        <div id="lottie-hero" class="lottie-container" aria-hidden="true"></div>
+
+        <div class="services-row" aria-hidden="true">
+          <article class="service-pill" role="article" aria-labelledby="svc-web" data-accent="violet" tabindex="0">
+            <div class="icon-wrap" aria-hidden="true"><i data-feather="code"></i></div>
+            <div class="service-content">
+              <h4 id="svc-web">Web Apps</h4>
+              <p>SSR, APIs, otimização de performance e testes automatizados.</p>
+              <div class="service-tags" aria-hidden="true">
+                <span class="tag">React</span>
+                <span class="tag">Node</span>
+                <span class="tag">Next.js</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-pill" role="article" aria-labelledby="svc-design" data-accent="cyan" tabindex="0">
+            <div class="icon-wrap" aria-hidden="true"><i data-feather="layout"></i></div>
+            <div class="service-content">
+              <h4 id="svc-design">Design</h4>
+              <p>Design system, prototipagem, handoff e testes de usabilidade.</p>
+              <div class="service-tags" aria-hidden="true">
+                <span class="tag">Figma</span>
+                <span class="tag">Prototipagem</span>
+              </div>
+            </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="section" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title">Destaques do Portfólio</h2>
+      <div class="grid" role="list">
+        <article class="card" role="listitem" data-project="aurora">
+          <img loading="lazy" src="img/imgForAuroraNewsProject.png" alt="Projeto AuroraNews — portal de notícias">
+          <div class="card-body">
+            <h4>AuroraNews</h4>
+            <p>Portal de notícias com CMS simples e deploy automático.</p>
+            <div class="card-actions">
+              <a class="glass-cta demo-btn" data-url="https://auroranews.vercel.app"
+                aria-label="Abrir demo AuroraNews"><i data-feather="external-link"></i>Demo</a>
+              <a class="glass-cta" href="https://github.com/EstandarMustaq/aurora" target="_blank" rel="noopener"
+                aria-label="Código AuroraNews"><i data-feather="github"></i>Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem" data-project="vortexa">
+          <img loading="lazy" src="img/imgForVortexaAssistentVirtual.png" alt="Projeto Vortexa — assistente virtual">
+          <div class="card-body">
+            <h4>Vortexa AI</h4>
+            <p>Assistente virtual em Next.js com integração de IA.</p>
+            <div class="card-actions">
+              <a class="glass-cta demo-btn" data-url="https://vortexa-ia.vercel.app" aria-label="Abrir demo Vortexa"><i
+                  data-feather="external-link"></i>Demo</a>
+              <a class="glass-cta" href="https://github.com/EstandarMustaq/vortexa.ia" target="_blank" rel="noopener"
+                aria-label="Código Vortexa"><i data-feather="github"></i>Código</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section" aria-labelledby="servicos-title">
+      <h2 id="servicos-title">Serviços</h2>
+
+      <div class="services-row services-grid" role="list">
+        <article class="service-pill" role="listitem" aria-labelledby="svc-dev" data-accent="violet" tabindex="0">
+          <div class="icon-wrap" aria-hidden="true"><i data-feather="code"></i></div>
+          <div class="service-content">
+            <h4 id="svc-dev">Desenvolvimento Web</h4>
+            <p>Sites, SPAs e APIs com foco em performance, testes e observabilidade.</p>
+          </div>
+        </article>
+
+        <article class="service-pill" role="listitem" aria-labelledby="svc-uiux" data-accent="cyan" tabindex="0">
+          <div class="icon-wrap" aria-hidden="true"><i data-feather="layout"></i></div>
+          <div class="service-content">
+            <h4 id="svc-uiux">UI / UX Design</h4>
+            <p>Design system, protótipos e testes de usabilidade com handoff para devs.</p>
+          </div>
+        </article>
+
+        <article class="service-pill" role="listitem" aria-labelledby="svc-brand" tabindex="0">
+          <div class="icon-wrap" aria-hidden="true"><i data-feather="pen-tool"></i></div>
+          <div class="service-content">
+            <h4 id="svc-brand">Branding & Identidade</h4>
+            <p>Identidade visual, logotipos e materiais de comunicação alinhados à marca.</p>
+          </div>
+        </article>
+
+        <article class="service-pill" role="listitem" aria-labelledby="svc-infra" tabindex="0">
+          <div class="icon-wrap" aria-hidden="true"><i data-feather="server"></i></div>
+          <div class="service-content">
+            <h4 id="svc-infra">Arquitetura & Infra</h4>
+            <p>Consultoria de infra, CI/CD e otimização de custos na cloud.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contacto</h2>
+
+      <div class="footer-wrap">
+        <div class="contact-card" role="region" aria-labelledby="contact-title">
+          <h3>Vamos conversar</h3>
+          <p class="muted text-pull">Tem um projecto inovador em mente? Envie uma mensagem e eu respondo em 24–48h.</p>
+
+          <div class="contact-grid">
+            <div class="contact-ways" aria-hidden="false">
+              <a class="glass-cta primary" href="#contact-form" id="btn-contact-form" aria-label="Enviar mensagem">
+                <i data-feather="message-square"></i><span>Mensagem</span>
+              </a>
+
+              <a class="glass-cta"
+                href="mailto:estandarmustaque@hotmail.com?subject=Contacto%20via%20Port%C3%B3fio&body=Olá%20Estandar,%0A%0AGostaria%20de%20falar%20sobre..."
+                id="mailto-link" aria-label="Enviar email">
+                <i data-feather="mail"></i><span>Email</span>
+              </a>
+
+              <a class="glass-cta" href="https://x.com/mqlinux" target="_blank" rel="noopener" aria-label="Twitter">
+                <i data-feather="twitter"></i><span>Twitter</span>
+              </a>
+
+              <a class="glass-cta" href="https://linkedin.com/in/estandamustaq" target="_blank" rel="noopener"
+                aria-label="LinkedIn">
+                <i data-feather="linkedin"></i><span>LinkedIn</span>
+              </a>
+            </div>
+
+            <div class="contact-extra" aria-live="polite">
+              <p class="small muted">Ou copie o meu email</p>
+
+              <div class="copy-email" role="group" aria-label="Copiar email">
+                <input id="copy-email-input" class="copy-input" readonly value="mustaqueestandarjunior@gmail.com"
+                  aria-label="Endereço de email" />
+                <button id="copy-email-btn" class="icon-btn" aria-label="Copiar email"><i
+                    data-feather="copy"></i></button>
+              </div>
+
+              <p class="muted small" style="margin-top:10px">Disponibilidade: <strong>Freelance</strong> — respondo em
+                24–48h</p>
+            </div>
+          </div>
+
+          <div id="contact-toast" class="contact-toast" role="status" aria-live="polite" hidden></div>
+        </div>
+
+        <form id="contact-form" class="contact-card" novalidate>
+          <!-- Honeypot anti-bot -->
+          <input type="text" name="company" style="display:none" autocomplete="off" />
+
+          <label for="name">Nome</label>
+          <input id="name" name="name" required placeholder="Seu nome" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="email@exemplo.com" />
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" required
+            placeholder="Conte-me sobre o seu projecto..."></textarea>
+
+          <button type="submit" class="btn-primary">Enviar Mensagem</button>
+
+          <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer aria-label="Rodapé">
+      <p class="copyright">&copy; 2025 EstandarMustaq — Todos os direitos reservados.</p>
+    </footer>
+  </main>
+
+  <!-- Modal demos (iframe) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <h3 id="modal-title">Projeto</h3>
+        <button id="modal-close" class="btn-icon" aria-label="Fechar"><i data-feather="x"></i></button>
+      </div>
+      <div id="modal-content" class="modal-content">Carregando…</div>
+    </div>
+  </div>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Estandar Mustaq",
+    "jobTitle": "Desenvolvedor Web, UI/UX Designer",
+    "url": "https://seudominio.com/",
+    "sameAs": [
+      "https://github.com/EstandarMustaq",
+      "https://linkedin.com/in/estandamustaq",
+      "https://x.com/mqlinux"
+    ],
+    "email": "mailto:mustaqueestandarjunior@gmail.com"
+  }
+  </script>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { if (window.feather) feather.replace(); });
+  </script>
+</body>
+
+</html>
