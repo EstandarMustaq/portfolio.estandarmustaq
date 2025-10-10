@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const LOTTIE_PATH = 'img/coding-slide.json';
+  const LOTTIE_PATH = 'img/hero-animations.json';
 
   // -----------------------
   // Helpers
@@ -295,4 +295,5 @@
   }); // DOMContentLoaded end
 
 })(); // IIFE end
+
 
