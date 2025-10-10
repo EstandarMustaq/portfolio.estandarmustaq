@@ -79,7 +79,7 @@
     })();
 
     // -----------------------
-    // Lottie: lazy-load + fetch -> animationData (avoids path CORS issues if served over HTTP)
+    // Lottie: lazy-load and init
     // -----------------------
     (function setupLottieLazy() {
       const container = nodes.lottieContainer;
