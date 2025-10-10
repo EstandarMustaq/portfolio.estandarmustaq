@@ -1,21 +1,18 @@
 {
-  "name": "backend",
+  "name": "estandar-portfolio-backend",
   "version": "0.0.1",
-  "description": "Backend for contact form - EstandarMustaq",
-  "main": "app.js",
+  "description": "Serverless API for Contact Form - EstandarMustaq",
+  "main": "api/contact.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
-    "start": "node run.js",
-    "dev": "nodemon  run.js",
+    "dev": "vercel dev",
+    "start": "node ./api/contact.js",
+    "build": "echo \"no build step\""
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "express-rate-limit": "^6.7.0",
-    "helmet": "^6.0.1",
     "nodemailer": "^7.0.9"
-  },
-  "devDependencies": {
-    "dotenv": "^16.0.0",
-    "nodemon": "^3.1.10"
   }
 }
+
