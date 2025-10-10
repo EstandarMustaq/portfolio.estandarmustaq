@@ -1,5 +1,5 @@
 const dotenv = require("dotenv");
-const app = require("./server/server");
+const app = require("./api/app");
 
 dotenv.config();
 
