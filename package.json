@@ -4,7 +4,7 @@
   "description": "Serverless API for Contact Form - EstandarMustaq",
   "main": "api/contact.js",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "vercel dev",
