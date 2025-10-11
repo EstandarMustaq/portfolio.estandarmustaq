@@ -5,7 +5,6 @@ const fs = require('fs');
 const FROM_EMAIL = process.env.FROM_EMAIL;
 const TO_EMAIL = process.env.TO_EMAIL || process.env.SMTP_USER;
 
-// Reuse transporter across invocations (reduces cold-start cost)
 async function getTransporter() {
   if (global.__transporter) return global.__transporter;
   const transporter = nodemailer.createTransport({
