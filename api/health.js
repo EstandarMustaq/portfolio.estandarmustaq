@@ -80,14 +80,17 @@ function extractVercelInfoFromHeader(req) {
   if (!header) return { raw: null, region: process.env.VERCEL_REGION || null, instanceId: null };
 
   try {
-    const parts = String(header).split('::');
-    const region = parts.length >= 2 ? parts[1] : null;
-    const instanceId = parts.length >= 3 ? parts[2] : null;
-    return { raw: String(header), region: region || process.env.VERCEL_REGION || null, instanceId: instanceId || null };
+    const parts = String(header).split('::').filter(Boolean); // removes empty entries
+    const len = parts.length;
+    const instanceId = len >= 1 ? parts[len - 1] : null;
+    const region = len >= 2 ? parts[len - 2] : (process.env.VERCEL_REGION || null);
+
+    return { raw: String(header), region, instanceId };
   } catch (e) {
     return { raw: String(header), region: process.env.VERCEL_REGION || null, instanceId: null };
   }
 }
+
 
 /**
  * Compose vercel/deployment info safely from headers + envs
