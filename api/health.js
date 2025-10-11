@@ -139,6 +139,7 @@ module.exports = async (req, res) => {
   const payload = {
     ok: true,
     timestamp: nowIso,
+    healthCheckTime: nowIso,
     uptime: Math.round(uptimeSec),
     node: process.version,
     os: `${os.type()} ${os.arch()}`,
