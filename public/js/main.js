@@ -290,6 +290,15 @@
         });
       }
     })();
+    
+    (function () {
+      const year = new Date().getFullYear();
+      const el = document.getElementById('site-year');
+      if (el) {
+        el.textContent = year;
+        el.setAttribute('datetime', String(year));
+      }
+    })();    
 
     if (window.feather) feather.replace();
   }); // DOMContentLoaded end
